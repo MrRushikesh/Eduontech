@@ -1,0 +1,272 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #FFFFFF;
+    color:#434343;
+    font-family: 'roboto',sans-serif;
+}
+
+
+/* Header Start Here*/
+
+header{
+    /* border: 2px solid red; */
+    background-color: #FFFFFF;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+    margin: 100px 100px 0px 100px;
+    /* border: 2px solid red; */
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin:0 40px;
+    font-weight: 500px;
+    font-size: 24px;
+    line-height: 28.64px;
+    color:#434343;
+
+}
+
+nav ul li:hover{
+    color : #1C51F7;
+}
+
+.left{
+    /* border: 1px solid green; */
+    height: 83px;
+    width:465px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+}
+
+.icon{
+    /* border: 1px solid red; */
+    height: 83px;
+    width:145px;
+
+}
+
+.iconText{
+    /* border : 1px solid blue; */
+    width:100%;
+}
+
+#text1{
+    margin-top:14px;
+    /* margin-left:5px; */
+    font-weight:700;
+    font-size: 24px;
+    line-height: 31.2px;
+    color: linear-gradient(355.3deg, #000E65 -6.81%, #001CCB 69.23%);
+}
+
+#text2{
+    font-weight:400;
+    font-size: 16px;
+    line-height: 18.75.2px;
+    color:#828282;
+
+}
+
+
+.right {
+    border: 1px solid #FFFFFF;
+}
+
+.btn{
+    /* border: 2px solid yellow; */
+    height: 69px;
+    width:270px;
+    text-align: center;
+    border-radius: 100px;
+    border-color: linear-gradient(90deg, #828282 0%, #424242 100%);
+    background-color: #0111AF;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color:#FFFFFF;
+    line-height: 28.64px;
+
+}
+
+
+/* Header End Here*/
+
+
+/* Main Section start from Here */
+
+main{
+    /* border:2px solid green; */
+    background-color: #FFFFFF;
+}
+
+
+/* First Section Start From Here */
+
+
+.first{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.first > div{
+    /* border: 2px solid blue; */
+    background-color: #FFFFFF;
+}
+
+.leftFirst{
+    width:730px;
+    height: 507px;
+    margin-top:100px;
+    
+}
+
+.rightFirst{
+    width:866px;
+    height: 742px;
+}
+
+.firstHeading{
+    font-size: 72px;
+    font-weight: 700;
+    color:#0D1067;
+    line-height: 84.38px;
+}
+
+.firstSubHeading{
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 69.21px;
+    color: #1C51F7;
+    font-family: 'SF Pro Display';
+
+}
+
+.firstBox{
+    height: 144px;
+    width: 505px;
+    /* border: 2px solid green; */
+    display: flex;
+    /* justify-content: center; */
+
+}
+
+.firstBox > div{
+    height: 144px;
+    width:155px;
+    border-right: 1px solid #ECECEC;
+    /* border: 1px solid gray; */
+}
+
+.firstBox > div > .boxname{
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.64px;
+
+}
+
+.firstBox > div > .boximg{
+    margin-left:52px;
+    margin-top:10px;
+    display: block;
+    height: 48px;
+    width: 48px;
+    /* border: 2px solid red; */
+    
+}
+
+.firstBox > div > .boxnumber{
+    text-align: center;
+    margin-top:10px;
+    display: block;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42.96px;
+
+}
+
+.firstDesc{
+    margin-top:20px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42.96px;
+    color:#424242;
+}
+
+.leftFirst > div{
+    margin-top: 100px;
+}
+
+.leftFirst > div > p{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.64px;
+    /* border: 2px solid red; */
+}
+
+.leftFirst > div > .mob{
+    margin-left:50px;
+}
+
+
+/* First Section End Here */
+
+
+
+/* Second Section Start From Here */
+
+.second{
+    height: 200px;
+    width:100%;
+    /* border: 2px solid red; */
+}
+
+.container-2{
+    display: flex;
+    margin-top:20px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.container-2 > div{
+    height: 163px;
+    width:415px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-left: 50px;
+
+}
+
+.container-2 > div > img{
+    /* border: 2px solid red; */
+    /* display: block; */
+    margin-top:30px;
+    margin-left:33px;
+}
+
+
+
+/* Second Section End Here */
