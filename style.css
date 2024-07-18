@@ -10,13 +10,14 @@ body {
 }
 
 
-/* Header Start Here*/
+/* Header Section CSS Start From Here */
 
 header{
     /* border: 2px solid red; */
     background-color: #FFFFFF;
 }
 
+/* Navbar CSS Start From Here */
 
 nav{
     display: flex;
@@ -25,7 +26,6 @@ nav{
     height: 83px;
     margin: 100px 100px 0px 100px;
     /* border: 2px solid red; */
-
 }
 
 nav ul{
@@ -40,36 +40,34 @@ nav ul li{
     font-size: 24px;
     line-height: 28.64px;
     color:#434343;
-
 }
 
 nav ul li:hover{
     color : #1C51F7;
 }
 
-.left{
+
+.navbar-left{
     /* border: 1px solid green; */
     height: 83px;
     width:465px;
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
-    
+    flex-direction: row;  
 }
 
-.icon{
+.navbar-icon{
     /* border: 1px solid red; */
     height: 83px;
     width:145px;
-
 }
 
-.iconText{
+.navbar-icon-text{
     /* border : 1px solid blue; */
     width:100%;
 }
 
-#text1{
+#navbar-icon-text1{
     margin-top:14px;
     /* margin-left:5px; */
     font-weight:700;
@@ -78,20 +76,18 @@ nav ul li:hover{
     color: linear-gradient(355.3deg, #000E65 -6.81%, #001CCB 69.23%);
 }
 
-#text2{
+#navbar-icon-text2{
     font-weight:400;
     font-size: 16px;
     line-height: 18.75.2px;
     color:#828282;
-
 }
 
-
-.right {
+.navbar-right {
     border: 1px solid #FFFFFF;
 }
 
-.btn{
+.navbar-btn{
     /* border: 2px solid yellow; */
     height: 69px;
     width:270px;
@@ -104,11 +100,13 @@ nav ul li:hover{
     font-weight: 700;
     color:#FFFFFF;
     line-height: 28.64px;
-
 }
 
+/* Nabbar CSS End Here */
 
-/* Header End Here*/
+/* Header Section CSS End Here*/
+
+
 
 
 /* Main Section start from Here */
@@ -119,66 +117,67 @@ main{
 }
 
 
-/* First Section Start From Here */
 
 
-.first{
+/* Section One CSS Start From Here */
+
+
+.section-one{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
-.first > div{
+.section-one > div{
     /* border: 2px solid blue; */
     background-color: #FFFFFF;
 }
 
-.leftFirst{
-    width:730px;
+.section-one-left{
+    width:737px;
     height: 507px;
-    margin-top:100px;
-    
+    margin-top:170px;
+    /* border: 2px solid red; */
+    gap: 50px;
+
 }
 
-.rightFirst{
-    width:866px;
-    height: 742px;
-}
 
-.firstHeading{
+.section-one-left-heading{
     font-size: 72px;
     font-weight: 700;
     color:#0D1067;
     line-height: 84.38px;
 }
 
-.firstSubHeading{
+.section-one-left-subheading{
     font-size: 50px;
     font-weight: 500;
     line-height: 69.21px;
     color: #1C51F7;
-    font-family: 'SF Pro Display';
+    /* font-family: 'SF Pro Display'; */
 
 }
 
-.firstBox{
+.section-one-left-box{
     height: 144px;
+    margin-top:20px;
     width: 505px;
     /* border: 2px solid green; */
     display: flex;
-    /* justify-content: center; */
+    flex-wrap: nowrap;
+    flex-direction: row;
 
 }
 
-.firstBox > div{
+.section-one-left-box > div{
     height: 144px;
     width:155px;
     border-right: 1px solid #ECECEC;
     /* border: 1px solid gray; */
 }
 
-.firstBox > div > .boxname{
+.section-one-left-box > div > .boxName{
     text-align: center;
     display: block;
     font-size: 24px;
@@ -187,7 +186,7 @@ main{
 
 }
 
-.firstBox > div > .boximg{
+.section-one-left-box > div > .boxImg{
     margin-left:52px;
     margin-top:10px;
     display: block;
@@ -197,7 +196,7 @@ main{
     
 }
 
-.firstBox > div > .boxnumber{
+.section-one-left-box > div > .boxCount{
     text-align: center;
     margin-top:10px;
     display: block;
@@ -207,19 +206,21 @@ main{
 
 }
 
-.firstDesc{
-    margin-top:20px;
+.section-one-left-desc{
+    margin-top:30px;
     font-size: 36px;
     font-weight: 500;
     line-height: 42.96px;
     color:#424242;
 }
 
-.leftFirst > div{
-    margin-top: 100px;
+
+.section-one-left-details{
+    margin-top:85px;
 }
 
-.leftFirst > div > p{
+
+.section-one-left > div > p{
     display: inline-block;
     font-size: 24px;
     font-weight: 400;
@@ -227,46 +228,142 @@ main{
     /* border: 2px solid red; */
 }
 
-.leftFirst > div > .mob{
+.section-one-left > div > .section-one-left-contact{
     margin-left:50px;
 }
 
-
-/* First Section End Here */
-
-
-
-/* Second Section Start From Here */
-
-.second{
-    height: 200px;
-    width:100%;
-    /* border: 2px solid red; */
+.section-one-right{
+    width:866.59px;
+    height: 742.26px;
 }
 
-.container-2{
+/* Section One CSS End Here */
+
+
+
+
+
+/* Section Two CSS Start From Here */
+
+.section-two{
+    height: 163px;
+    width:100%;
+    /* border: 2px solid red; */
+    margin-top:30px;
+}
+
+.section-two-corousel{
     display: flex;
-    margin-top:20px;
     flex-wrap: nowrap;
     flex-direction: row;
 }
 
-.container-2 > div{
+.section-two-corousel > div{
     height: 163px;
     width:415px;
     border: 1px solid #000000;
     border-radius: 20px;
     margin-left: 50px;
-
 }
 
-.container-2 > div > img{
-    /* border: 2px solid red; */
+.section-two-corousel > div > img{
+    width: 340px;
+    height: 103px;
     /* display: block; */
     margin-top:30px;
     margin-left:33px;
 }
 
+/* Section Two CSS End Here*/
 
 
-/* Second Section End Here */
+
+
+
+
+/* Section Three CSS Start From Here */
+
+.section-three{
+    height: 1080px;
+    width:100%;
+    /* border: 2px solid red; */
+}
+
+.section-three > .section-three-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.section-three-left{
+    height: 581px;
+    width: 877px;
+    /* border: 2px solid green; */
+    text-align: center;
+    background-color: #353D54;
+    border-radius: 0px 150px 0px 150px;
+    margin-top:260px;
+}
+
+.section-three-left > img{
+    margin-top: 40px;
+}
+
+.section-three-right{
+    height: 800px;
+    width: 877px;
+    /* border: 2px solid blue; */
+    margin-top:205px;
+}
+
+.section-three-right-heading{
+    line-height: 42.96px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #434343;
+}
+
+.section-three-right-subheading{
+   font-size: 64px;
+   font-weight: 500;
+   line-height: 76.38px;
+   color:#1C51F7;
+   margin-top:20px;
+}
+
+.section-three-right-desc1{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.64px;
+    justify-content: left;
+    color: #434343;
+    margin-top:50px;
+}
+
+.section-three-right-desc2{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28.64px;
+    justify-content: left;
+    color: #434343;
+    /* margin-top:50px; */
+}
+
+.section-three-right > button{
+    width:270px;
+    height: 69px;
+    padding: 20px 20px 20px 0;
+    gap: 8px;
+    border: 1px solid linear-gradient(90deg, #828282 0%, #424242 100%);
+    background-color: #0111AF;
+    border-radius: 100px;
+    font-size: 24px;
+    font-weight: 700;
+    color:#ffffff;
+    margin-left:300px;
+    margin-top:100px;
+
+}
+
+/* Section Three CSS End Here */
