@@ -1,14 +1,17 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+/* Root CSS */
+
 * {
     margin: 0%;
     padding: 0%;
 }
 
+/* Body CSS */
 body {
     background-color: #FFFFFF;
     color:#434343;
-    font-family: 'roboto',sans-serif;
 }
-
 
 /* Header Section CSS Start From Here */
 
@@ -20,12 +23,12 @@ header{
 /* Navbar CSS Start From Here */
 
 nav{
+    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 83px;
     margin: 100px 100px 0px 100px;
-    /* border: 2px solid red; */
 }
 
 nav ul{
@@ -40,12 +43,13 @@ nav ul li{
     font-size: 24px;
     line-height: 28.64px;
     color:#434343;
+    font-family: 'SF Pro Display', sans-serif;                                              
 }
 
 nav ul li:hover{
     color : #1C51F7;
+    cursor:grab;
 }
-
 
 .navbar-left{
     /* border: 1px solid green; */
@@ -68,8 +72,9 @@ nav ul li:hover{
 }
 
 #navbar-icon-text1{
+    /* border: 2px solid green; */
     margin-top:14px;
-    /* margin-left:5px; */
+    font-family: "IBM Plex Mono", monospace;;
     font-weight:700;
     font-size: 24px;
     line-height: 31.2px;
@@ -77,6 +82,8 @@ nav ul li:hover{
 }
 
 #navbar-icon-text2{
+    /* border: 2px solid green; */
+    font-family: "Roboto", sans-serif;
     font-weight:400;
     font-size: 16px;
     line-height: 18.75.2px;
@@ -84,27 +91,40 @@ nav ul li:hover{
 }
 
 .navbar-right {
-    border: 1px solid #FFFFFF;
+    /* border: 2px solid orange; */
+    background-color: #ffffff;
 }
 
 .navbar-btn{
     /* border: 2px solid yellow; */
-    height: 69px;
-    width:270px;
-    text-align: center;
-    border-radius: 100px;
-    border-color: linear-gradient(90deg, #828282 0%, #424242 100%);
+    font-family: 'SF Pro Display', sans-serif;
     background-color: #0111AF;
-    padding: 20px;
+    color:#FFFFFF;
     font-size: 24px;
     font-weight: 700;
-    color:#FFFFFF;
     line-height: 28.64px;
+    text-align: center;
+    width: 270px;
+    height: 69px;
+    padding: 20px;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px;
+    opacity: 0px;
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #828282 0%, #424242 100%);
+    box-shadow: 3px 2px 9px 0px #0000001A;
+    box-shadow: 14px 8px 16px 0px #00000017;
+    box-shadow: 30px 17px 21px 0px #0000000D;
+    box-shadow: 54px 31px 25px 0px #00000003;
+    box-shadow: 85px 49px 27px 0px #00000000;
+
 }
 
-/* Nabbar CSS End Here */
+/* Navbar CSS End Here */
 
 /* Header Section CSS End Here*/
+
 
 
 
@@ -112,17 +132,15 @@ nav ul li:hover{
 /* Main Section start from Here */
 
 main{
-    /* border:2px solid green; */
+    /* border:2px solid yellow; */
     background-color: #FFFFFF;
 }
 
 
-
-
 /* Section One CSS Start From Here */
 
-
 .section-one{
+    /* border: 2px solid red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -134,107 +152,126 @@ main{
 }
 
 .section-one-left{
+    /* border: 2px solid red; */
     width:737px;
     height: 507px;
-    margin-top:170px;
-    /* border: 2px solid red; */
+    margin-top:180px;
     gap: 50px;
-
 }
 
-
 .section-one-left-heading{
+    /* border : 2px solid blue; */
+    font-family: "Roboto", sans-serif;
     font-size: 72px;
     font-weight: 700;
     color:#0D1067;
     line-height: 84.38px;
+
 }
 
 .section-one-left-subheading{
+    /* border: 2px solid red; */
     font-size: 50px;
     font-weight: 500;
     line-height: 69.21px;
     color: #1C51F7;
-    /* font-family: 'SF Pro Display'; */
-
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 .section-one-left-box{
+    /* border: 2px solid green; */
     height: 144px;
     margin-top:20px;
     width: 505px;
-    /* border: 2px solid green; */
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-
 }
 
 .section-one-left-box > div{
+    /* border: 1px solid olive; */
     height: 144px;
     width:155px;
-    border-right: 1px solid #ECECEC;
-    /* border: 1px solid gray; */
+    padding: 0px 12px 0px 12px;
+    gap: 12px;
+    border: 0px 2px 0px 0px;
+    opacity: 0px;
+    border-right: 2px solid #ECECEC
 }
 
 .section-one-left-box > div > .boxName{
-    text-align: center;
     display: block;
+    font-family: 'SF Pro Display', sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 28.64px;
-
+    text-align: center;
 }
 
 .section-one-left-box > div > .boxImg{
-    margin-left:52px;
+    /* border: 2px solid red; */
+    margin-left:40px;
     margin-top:10px;
     display: block;
     height: 48px;
     width: 48px;
-    /* border: 2px solid red; */
-    
 }
 
 .section-one-left-box > div > .boxCount{
-    text-align: center;
     margin-top:10px;
     display: block;
+    font-family: 'SF Pro Display', sans-serif;
     font-size: 36px;
     font-weight: 500;
     line-height: 42.96px;
-
+    text-align: center;
+    color: #0D1067;
 }
 
 .section-one-left-desc{
-    margin-top:30px;
+    /* border: 2px solid orangered; */
+    margin-top:20px;
     font-size: 36px;
     font-weight: 500;
     line-height: 42.96px;
+    font-family: 'SF Pro Display', sans-serif;
     color:#424242;
 }
 
-
 .section-one-left-details{
-    margin-top:85px;
+    /* border: 2px solid olive; */
+    margin-top:75px;
 }
 
 
 .section-one-left > div > p{
+    /* border: 2px solid red; */
     display: inline-block;
     font-size: 24px;
     font-weight: 400;
     line-height: 28.64px;
-    /* border: 2px solid red; */
+    font-family: SF Pro Display;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.64px;
+    text-align: left;
+
 }
 
 .section-one-left > div > .section-one-left-contact{
-    margin-left:50px;
+    margin-left:90px;
 }
 
 .section-one-right{
+    /* border: 2px solid green; */
     width:866.59px;
     height: 742.26px;
+}
+
+.section-one-right > img{
+    /* border: 2px solid green; */
+    width:100%;
+    height:100%;
 }
 
 /* Section One CSS End Here */
@@ -246,19 +283,21 @@ main{
 /* Section Two CSS Start From Here */
 
 .section-two{
-    height: 163px;
-    width:100%;
     /* border: 2px solid red; */
+    /* height: 210px; */
+    width:100%;
     margin-top:30px;
 }
 
 .section-two-corousel{
+    /* border: 2px solid green; */
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
 }
 
 .section-two-corousel > div{
+    /* border: 2px solid blue; */
     height: 163px;
     width:415px;
     border: 1px solid #000000;
@@ -267,9 +306,9 @@ main{
 }
 
 .section-two-corousel > div > img{
+    /* border: 2px solid olive; */
     width: 340px;
     height: 103px;
-    /* display: block; */
     margin-top:30px;
     margin-left:33px;
 }
@@ -280,16 +319,16 @@ main{
 
 
 
-
-/* Section Three CSS Start From Here */
+/* Section Three CSS Start From Here / About Us Section */
 
 .section-three{
+     /* border: 2px solid green; */
     height: 1080px;
     width:100%;
-    /* border: 2px solid red; */
 }
 
 .section-three > .section-three-container{
+    /* border: 2px solid blue; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -297,13 +336,14 @@ main{
 }
 
 .section-three-left{
+    /* border: 2px solid red; */
     height: 581px;
     width: 877px;
-    /* border: 2px solid green; */
     text-align: center;
     background-color: #353D54;
     border-radius: 0px 150px 0px 150px;
     margin-top:260px;
+    margin-left:10px;
 }
 
 .section-three-left > img{
@@ -311,10 +351,12 @@ main{
 }
 
 .section-three-right{
-    height: 800px;
-    width: 877px;
     /* border: 2px solid blue; */
-    margin-top:205px;
+    height: 800px;
+    width: 759px;
+    margin-top:190px;
+    margin-right:40px;
+
 }
 
 .section-three-right-heading{
@@ -322,6 +364,7 @@ main{
     font-size: 36px;
     font-weight: 700;
     color: #434343;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 .section-three-right-subheading{
@@ -329,7 +372,8 @@ main{
    font-weight: 500;
    line-height: 76.38px;
    color:#1C51F7;
-   margin-top:20px;
+   margin-top:15px;
+   font-family: 'SF Pro Display', sans-serif;
 }
 
 .section-three-right-desc1{
@@ -339,6 +383,7 @@ main{
     justify-content: left;
     color: #434343;
     margin-top:50px;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 .section-three-right-desc2{
@@ -347,35 +392,55 @@ main{
     line-height: 28.64px;
     justify-content: left;
     color: #434343;
-    /* margin-top:50px; */
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 .section-three-right > button{
     width:270px;
     height: 69px;
-    padding: 20px 20px 20px 0;
-    gap: 8px;
-    border: 1px solid linear-gradient(90deg, #828282 0%, #424242 100%);
     background-color: #0111AF;
-    border-radius: 100px;
     font-size: 24px;
     font-weight: 700;
     color:#ffffff;
-    margin-left:300px;
-    margin-top:100px;
+    margin-left:270px;
+    margin-top:50px;
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #828282 0%, #424242 100%);
+    top: 833px;
+    left: 1259px;
+    padding: 20px 20px 20px 0px;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px;
+    opacity: 0px;
+    /* box-shadow: 3px 2px 9px 0px #0000001A;
+    box-shadow: 14px 8px 16px 0px #00000017;
+    box-shadow: 30px 17px 21px 0px #0000000D;
+    box-shadow: 54px 31px 25px 0px #00000003;
+    box-shadow: 85px 49px 27px 0px #00000000; */
+
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-family: 'SF Pro Display', sans-serif;
 
 }
 
-/* Section Three CSS End Here */
+/* Section Three CSS End Here / About Us Section End Here */ 
 
 
-/* Section Four CSS Start From Here */
+
+
+/* Section Four CSS Start From Here / Our Courses Section Start Here  */
 
 .section-four{
-    height: 1296px;
     /* border:2px solid red; */
+    background-color: #fff;
+    /* height: 1296px; */
 }
 
+.section-four-container1{
+    /* border: 2px solid green; */
+    background-color: #ffffff;
+}
 
 .section-four-container1 > p{
     margin-top:49px;
@@ -384,9 +449,11 @@ main{
     font-size: 36px;
     line-height: 42.96px;
     color:#434343;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 .section-four-container2{
+    /* border: 2px solid green; */
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -395,111 +462,1068 @@ main{
 }
 
 .section-four-container2 > div{
+    /* border: 2px solid red; */
     height: 76px;
     width:380px;
-    /* border: 2px solid red; */
 }
 
-.section-four-courses{
+.section-four-ourcourses{
     margin-left: 108px;
-    margin-top:20px;
+    margin-top:30px;
 }
 
-.section-four-courses > p{
+.section-four-ourcourses > p{
     font-size: 64px;
     font-weight: 500;
     line-height: 76.38px;
     color:#1C51F7;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 .section-four-btn{
     margin-right: 108px;
+    margin-top:30px;
 }
 
 .section-four-btn > button{
     width:291px;
-    height:69px;
+    height: 69px;
+    padding: 20px 0px 20px 0px;
+    gap: 8px;
     border-radius: 100px;
-    /* border: 1px solid; */
+    border: 1px;
+    opacity: 0px;
+    border: 1px solid;
     border-image-source: linear-gradient(90deg, #828282 0%, #424242 100%);
+    background-color: #0111AF;
+    float:right;
+    font-family: SF Pro Display;
     font-size: 24px;
     font-weight: 700;
     line-height: 28.64px;
-    background-color:#0111AF;
-    color:#FFFFFF;
-    float: right;
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+    /* box-shadow: 3px 2px 9px 0px #0000001A;
+    box-shadow: 14px 8px 16px 0px #00000017;
+    box-shadow: 30px 17px 21px 0px #0000000D;
+    box-shadow: 54px 31px 25px 0px #00000003;
+    box-shadow: 85px 49px 27px 0px #00000000;  */
+
 }
+
 
 
 .section-four-container3{
-    /* height: 700px; */
-    /* border: 2px solid green; */
+    /* height: 800px; */
+    /* border: 2px solid purple; */
+    margin-left:100px;
+    margin-right: 100px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 108px;
-    margin-right: 108px;
-    /* margin-top:30px; */
 }
 
+.section-four-course-card{
+    border: 4px solid blue;
+    height: 320px;
+    width:255px;
+    border-radius: 35px;
+    position:relative;
+    margin-top:25px;
+    box-shadow: 0px 4px 4px 0px #00000040;
 
-.section-four-container3 > div{
-    border: 4px solid #1C51F7;
+}
+
+.section-four-course-card > img{
+    width:255px;
+    height: 320px;
+    border-radius: 35px;
+    opacity: 20%;
+    mix-blend-mode: multiply;
+}
+
+.section-four-course-card-contentainer{
+    /* border:2px solid red; */
+    position: absolute;
     border-radius: 35px;
     width:255px;
     height: 320px;
-    background-image: url('./assests/container-background.png');
-    margin-top:20px;
+    top:0px;
+    bottom:0px;
+ 
 }
 
-
-.course > .course-duration{
+.section-four-vector-container{
+    /* border:2px solid red; */
+    position: relative;
     width:127px;
     height: 40px;
-    /* border: 1px solid red; */
     float: right;
-    margin-top:23px;
-    background-image: url(./assests/vector.png);
+    margin-top:25px;
+
 }
 
-.course > .course-duration > p{
+.section-four-vector-container > div{
+    position:absolute;
+    top:10px;
+    left:40px;
+}
+
+.section-four-vector-container > div > p{
+    font-size: 24px;
+    line-height: 28.64px;
+    font-weight: 500;
+    text-align: center;
+    color:#FFFFFF;
+    margin-top:-4px;
+    font-family: 'SF Pro Display', sans-serif;
+
+}
+
+
+.section-four-course-card-contentainer > .section-four-card-icon{
+    width:130px;
+    height: 84px;
+    /* border: 2px solid black; */
+    margin-left: 65px;
+    margin-top:120px;
+}
+
+
+.section-four-course-card-contentainer > .section-four-card-icon> img{
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    margin-left:30px;
+    margin-top:10px;
+}
+
+
+.section-four-course-card-contentainer > .section-four-card-btn{
+    width:223px;
+    height: 40px;
+    /* border: 2px solid black; */
+    margin-left: 17px;
+    margin-top:40px;
+}
+
+
+.section-four-course-card-contentainer > .section-four-card-btn > button{
+    width:100%;
+    height: 100%;
+    box-shadow: 0px 4px 2.3px 0px #00000040;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.48px;
+    border: 4px solid linear-gradient(0deg, #1C51F7, #1C51F7);
+    background-color: #1C51F7;
+    color:#ffffff;
+    border: none;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+/* Section Four CSS End Here / Our Courses Section End Here */
+
+
+
+
+/* Section Five CSS Start From Here / Certification Section In Start From Here */
+
+.section-five{
+    /* border: 2px solid blue; */
+    /* height: 500px; */
+    background-color: #ffffff;
+}
+
+.section-five-container1{
+    /* border: 2px solid green; */
+    margin-top:50px;
+    height: 76px;
+    width:500px;
+    margin-left:100px;
+}
+
+.section-five-container1 > p{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76.38px;
+    color:#1C51F7;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+
+.section-five-container2{
+    /* border: 2px solid purple; */
+    margin-left:100px;
+    margin-right: 100px;
+    margin-top:25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-bottom: 60px; */
+}
+
+.section-five-course-card{
+    height: 319px;
+    width:255px;
+    border-radius: 35px;
+    position:relative;
+    margin-top:20px;
+    border: 4px solid;
+    border-color:#1C51F7;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.section-five-course-card > img{
+    width:254px;
+    height: 317px;
+    border-radius: 35px;
+    opacity: 20%;
+    mix-blend-mode: multiply;
+}
+
+.section-five-course-card-contentainer{
+     /* border:2px solid red; */
+    position: absolute;
+    border-radius: 35px;
+    width:254px;
+    height: 317px;
+    top:0px;
+    bottom:0px;
+ 
+}
+
+.section-five-course-card-contentainer > .card-icon{
+    /* border: 2px solid black; */
+    width:64px;
+    height: 64px;
+    margin-left: 95px;
+    margin-top:15px;
+}
+
+.section-five-course-card-contentainer > .card-name{
+    /* border: 2px solid black; */
+    width:175px;
+    height: 87px;
+    margin-left: 35px;
+    margin-top:30px;
+}
+
+.section-five-course-card-contentainer > .card-name > p{
     font-size: 24px;
     font-weight: 500;
     line-height: 28.64px;
     text-align: center;
-    color:#FFFFFF;
-    margin-top:6px;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
-.course > .course-icon{
-    width:64px;
-    height: 64px;
-    /* border: 1px solid orange; */
-    margin-top:130px;
-    margin-left:100px;
-}
-
-.course > .course-name{
+.section-five-course-card-contentainer > .card-btn{
+    /* border: 2px solid black; */
     width:223px;
-    height:40px;
-    /* border: 2px solid purple; */
-    margin-top:55px;
-    margin-left:17px;
+    height: 40px;
+    margin-left: 12px;
+    margin-top:50px;
 }
 
-.course > .course-name > button{
-    border-radius: 10px;
-    width:223px;
-    height:40px;
-    /* border: 2px solid purple; */
+.section-five-course-card-contentainer > .card-btn > button{
+
     background-color: #1C51F7;
     color:#ffffff;
+    width: 223px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 10px;
+    opacity: 0px;
+    box-shadow: 0px 4px 2.3px 0px #00000040;
+    font-family:'SF Pro Display', sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.48px;
-    border: none;
+    text-align: center;
+    border:none;
+    margin-left:5px;
+}
+
+
+/* Section Five CSS End Here / Certification In Section End Here */
+
+
+
+/* Section Eight CSS Start From Here */
+
+.section-eight{
+    /* border: 2px solid brown; */
+    /* height:2017px; */
+    width:100%;
+}
+
+.section-eight-heading{
+    /* border: 2px solid gray; */
+    margin-top:102px;
+}
+
+.section-eight-heading1{
+    /* border: 1px solid green; */
+    width:230px;
+    height:43px;
+    margin-left:100px;
+    color:#434343;
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.96px;
+    text-align: left;
+}
+
+.section-eight-heading2{
+    /* border: 2px solid blue; */
+    width:450px;
+    height: 76px;
+    margin-left:100px;
+    color:#1C51F7;
+    margin-top:15px;
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76.38px;
+    text-align: left;
+}
+
+.section-eight-card-container{
+    /* border:2px solid purple; */
+    height: 494px;
+    margin-left: 100px;
+    margin-top:20px;
+
+}
+
+.section-eight-card-container > div{
+    /* border: 1px solid goldenrod; */
+    width:341px;
+    height:458px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.section-eight-card-image{
+    /* border: 1px solid goldenrod; */
+    height: 259px;
+    width:341px;
+}
+
+.section-eight-card-content{
+    /* border: 1px solid goldenrod; */
+    /* height: 259px; */
+    /* width:341px; */
+    background-color: #ffffff;
+}
+
+.section-eight-content-1{
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+
+.section-eight-content-1 > p{
+    display: inline-block;
+}
+
+.section-eight-content-1 > .university-name{
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.09px;
+    text-align: left;
+    font-family:'SF Pro Display', sans-serif;
+}
+
+.section-eight-content-1 > .city-name{
+    font-family: SF Pro Display;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.32px;
+    text-align: left;
+    float: right;
+    font-family:'SF Pro Display', sans-serif;   
+}
+
+.section-eight-content-2{
+    /* border: 2px solid red; */
+    /* margin-top:20px; */
+    margin-top:25px;
+    margin-left:10px;
+    margin-right:10px;
+
+}
+
+
+.section-eight-content-2 > p{
+    display: block;
+    font-family: SF Pro Display;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.32px;
+    text-align: left;
+    font-family:'SF Pro Display', sans-serif;
+}
+
+.section-eight-content-2 > p > span{
+    color:#1710BC;
+
+}
+
+
+.section-eight-content-3{
+    /* border: 2px solid red; */
+    margin-top:30px;
+    margin-left:10px;
+    margin-right:10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+
+.section-eight-content-3 > div{
+    /* border: 2px solid green; */
+    width:100px;
+    height: 24px;
+}
+ 
+.section-eight-left1{
+    font-family: SF Pro Display;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13.13px;
+    text-align: left;
+    font-family:'SF Pro Display', sans-serif;
+}
+
+.section-eight-left2{
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 10.74px;
+    text-align: left;
+    font-family:'SF Pro Display', sans-serif;
+}
+
+.section-eight-right1{
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13.13px;
+    text-align: right;
+    color:#1710BC;
+    margin-right:20px;
+    font-family:'SF Pro Display', sans-serif;
+
+}
+
+.section-eight-right2{
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 10.74px;
+    text-align: right;
+    font-family:'SF Pro Display', sans-serif;
 
 
 }
 
+
+/* Section Eight CSS End Here */
+
+
+
+
+
+/* Section Nine CSS Start From Here */
+
+.section-nine{
+    /* height: 1200px; */
+    /* border: 2px solid orange; */
+    background-color: #ffffff;
+}
+
+.section-nine-heading1{
+    /* border: 2px solid green; */
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.96px;
+    text-align: left;
+    margin-left:100px;
+    color:#434343;
+    margin-top:20px;
+    font-family:'SF Pro Display', sans-serif;
+
+
+}
+
+.section-nine-heading2{
+    /* border : 2px solid purple; */
+    font-family: SF Pro Display;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76.38px;
+    text-align: left;
+    margin-left:100px;
+    color: #1C51F7;
+    font-family:'SF Pro Display', sans-serif;
+}
+
+
+.section-nine-container2{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.section-nine-container2 > div{
+    /* border: 2px solid green; */
+    margin-left:100px;
+    margin-right: 100px;
+    margin-top:40px;
+    margin-bottom: 50px;
+    
+}
+
+.section-nine-left{
+    /* border: 2px solid red; */
+    width:800px;
+    height: 998px;
+    box-shadow: 0px 10px 30px 0px #00000040;
+    border-radius: 30px;
+
+
+}
+
+.section-nine-left-card-container{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-left:80px;
+    margin-top:50px;
+}
+
+.section-nine-left-card-container > div{
+    /* border: 1px solid blue; */
+    height: 148px;
+    width: 586px;
+    margin-top:20px;
+
+}
+
+.section-nine-left-heading{
+    /* border: 2px solid green; */
+    height: 43px;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42.96px;
+    text-align: left;
+    color:#1C51F7;
+    font-family:'SF Pro Display', sans-serif;
+    
+
+
+
+}
+
+.section-nine-left-content{
+    /* border: 2px solid olive; */
+    height: 88px;
+    margin-top:10px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.64px;
+    text-align: left;
+    color:#434343;
+    font-family:'SF Pro Display', sans-serif;
+
+
+
+}
+
+
+.section-nine-right{
+    /* border: 2px solid orange; */
+    width:800px;
+    height: 998px;
+    position: relative;
+    top: 0;
+    left: 0;
+   
+  }
+
+  .image1 {
+    /* border:  2px solid red; */
+    position: relative;
+    width: 449px;
+    height: 636px;
+    top: 0px;
+    left: 290px;
+    gap: 0px;
+    border-radius: 30px 0px 0px 0px;
+    opacity: 0px;
+
+  }
+
+  .image2 {
+    position: absolute;
+    width: 435px;
+    height: 614px;
+    top: 340px;
+    left: 0px;
+    right:100px;
+    gap: 0px;
+    border-radius: 30px 0px 0px 0px;
+    border: 20px 0px 0px 0px;
+    opacity: 0px;
+
+  }
+
+
+
+
+/* Section Nine CSS End Here */
+
+
+
+
+
+
+/* Section Ten CSS Start From Here */
+
+.section-ten{
+      position: relative;
+      border: 2px solid red;
+      border: 1px 0px 0px 1px;
+      height: 1410px;
+      background: linear-gradient(180deg, #F7F7F7 47.38%, #869BB6 48.4%);
+
+}
+
+.section-ten-main-container{
+    position: absolute;
+
+}
+
+.section-ten-container1{
+    /* border: 2px solid green; */
+    width: 1083px;
+    height: 152px;
+    margin-left: 100px;
+    margin-top:169px;
+   
+}
+
+.section-ten-container1 > p{
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 76.38px;
+    text-align: left;
+    color:#1C51F7;
+    font-family:'SF Pro Display', sans-serif;
+}
+
+
+.section-ten-container2{
+    /* border: 1px solid blueviolet; */
+    width:1430px;
+    height: 945px;
+    margin-top:50px;
+    margin-left:240px;
+    border-radius: 50px 50px 50px  50px;
+    background-color: #869BB6;
+    border-bottom: 1px solid #1C51F7;
+}
+
+.section-ten-container2-img{
+    /* border: 2px solid orangered; */
+    height: 711px;
+    width:1430px;
+    border-radius: 50px 50px 0px  0px;
+}
+
+.section-ten-container2-content{
+    /* border: 2px solid green; */
+    width: 1430px;
+    height: 234px;
+    border-radius: 0px 0px 50px 50px;
+    border: 0px 0px 1px 0px;
+    opacity: 0px;
+    /* border-bottom: 1px solid #1C51F7; */
+
+}
+
+
+.section-ten-inner-content{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 1174px;
+    height:119px;
+    margin-left:120px;
+    margin-top:50px;
+
+}
+
+.section-ten-inner-content > div{
+    /* border: 2px solid red; */
+    width: 212px;
+    height: 119px;
+}
+
+.section-ten-inner-content-count{
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 78.72px;
+    text-align: center;
+    color:#FFFFFF;
+}
+
+.section-ten-inner-content-name{
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.52px;
+    text-align: center;
+    color:#FFFFFF;
+    margin-top:5px;
+}
+
+
+/* Section Ten CSS End Here */
+
+
+/* Section Eleve CSS Start From Here */
+
+.section-eleven{
+    /* height:1427px; */
+    border: 2px solid orange;
+    width:100%;
+}
+
+.section-eleven-container1{
+    margin-top:57px;
+    margin-left:100px;
+}
+
+.section-eleven-container1 > p{
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 78.72px;
+    text-align: left;
+    color: #1C51F7;
+}
+
+
+.section-eleven-container2{
+    width: 1711px;
+    height: 298px;
+    border-radius: 30px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #828282;
+    margin-left:100px;
+    margin-top:50px;
+}
+
+
+.section-elevn-icon-container{
+    width: 1313px;
+    height: 172px;
+    opacity: 0px;
+    /* border: 2px solid orange; */
+    margin:60px 0px 0px 200px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-elevn-icon-container > div{
+    width:176px;
+    height: 161px;
+    /* border: 2px solid green; */
+}
+
+.section-eleven-icon-container > div > img{
+    height: 100%;
+    width:100%;
+}
+
+
+.section-eleven-container3{
+    /* width: 1920px; */
+    margin-top:100px;
+    height: 202px;
+    background-color: #171978;
+    border: 2px solid red;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.section-eleven-container3 > div{
+    /* width:628px; */
+    height: 88px;
+    /* border: 2px solid green; */
+    margin-top:55px;
+}
+
+.section-eleven-container3-left{
+    width:628px;
+}
+
+.section-eleven-container3-left > p{
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44.28px;
+    text-align: left;
+    color: #FFFFFF;
+
+}
+
+.section-eleven-container3-right{
+    width:700px;
+}
+
+.section-eleven-container3-right > input{
+    display: inline-block;
+    width: 471px;
+    height: 50px;
+    border-radius: 5px;
+    opacity: 0px;
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.52px;
+    text-align: left;
+    color: #828282;
+    margin-top:20px;
+    outline: none;
+
+} 
+
+.section-eleven-container3-right > button{
+    width: 201px;
+    height: 50px;
+    border-radius: 5px;
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.52px;
+    text-align: center;
+    color: #000000;
+    float: right;
+    margin-top:20px;
+    background-color:#F3F3F3;
+    border:none;
+
+}
+
+
+
+
+.section-eleven-container4{
+    height: 350px;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.section-eleven-container4 > div{
+   
+    margin-top:25px;
+}
+
+.container4-zero{
+    /* border:2px solid red; */
+    /* border: 2px solid green; */
+    height: 295px;
+    position: absolute;
+    left:100px;
+}
+
+.container4-one{
+    height: 295px;
+    width:456px;
+    /* border: 2px solid green; */
+    margin-left: 50px;
+}
+
+
+
+.container4-one > .container4-one-heading{
+    display: inline-block;
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44.28px;
+    text-align: left;
+    color: #000000;
+    /* border:2px solid red; */
+    /* margin-top:-200px; */
+    margin-top:20px;
+
+
+}
+
+.container4-one > .container4-one-content{
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.52px;
+    text-align: left;
+    margin-top:15px;
+
+
+}
+
+
+
+.container4-two{
+    height: 295px;
+    width:158px;
+    /* border: 2px solid green; */
+
+}
+
+
+.container4-two > .container4-two-heading{
+    display: inline-block;
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44.28px;
+    text-align: left;
+    color: #000000;
+    /* border:2px solid red; */
+    /* margin-top:-200px; */
+    margin-top:20px;
+
+
+}
+
+.container4-two > .container4-two-content{
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.52px;
+    text-align: left;
+    margin-top:10px;
+
+}
+
+
+.container4-three{
+    height: 295px;
+    width:181px;
+    /* border: 2px solid green; */
+
+}
+
+.container4-three > .container4-three-heading{
+    display: inline-block;
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44.28px;
+    text-align: left;
+    color: #000000;
+    /* border:2px solid red; */
+    /* margin-top:-200px; */
+    margin-top:20px;
+
+
+}
+
+.container4-three > .container4-three-content{
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.52px;
+    text-align: left;
+    margin-top:10px;
+    text-decoration: underline;
+}
+
+
+.container4-four{
+    height: 295px;
+    width:212px;
+    /* border: 2px solid green; */
+}
+
+.container4-four > .container4-four-heading{
+    display: inline-block;
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44.28px;
+    text-align: left;
+    color: #000000;
+    /* border:2px solid red; */
+    /* margin-top:-200px; */
+    margin-top:10px;
+}
+
+.container4-four > .container4-four-content{
+    font-family:'SF Pro Display', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.52px;
+    text-align: left;
+    margin-top:15px;
+
+
+}
+
+.section-eleven-container5{
+    /* height: 100px; */
+    width:100%;
+    /* border: 2px solid red; */
+    border-top: 1px solid gray;
+}
+
+.section-eleven-container5 > p{
+   font-family:'SF Pro Display', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.52px;
+    text-align: left;
+    margin-left:210px;
+    margin-top:20px;
+    margin-bottom: 20px;
+  
+}
+
+
+
+/* Section Eleven Start From Here */
+
+
+  
+
+
+
+
+/* Section Eleven Close Here */
 
