@@ -1,0 +1,244 @@
+
+/* Navbar CSS Start From Here */
+/* 
+.navbar{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+    margin: 100px 100px 0px 100px;
+}
+
+.navbar-left {
+    border: 1px solid green;
+    height: 83px;
+    width: 465px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.navbar-icon {
+    border: 1px solid red;
+    height: 83px;
+    width: 145px;
+}
+
+.navbar-icon-text {
+    border : 1px solid blue;
+    width: 100%;
+}
+
+#navbar-icon-text1 {
+    border: 2px solid green;
+    margin-top: 14px;
+    font-family: "IBM Plex Mono", monospace;
+    ;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.2px;
+    color: linear-gradient(355.3deg, #000E65 -6.81%, #001CCB 69.23%);
+}
+
+#navbar-icon-text2 {
+    border: 2px solid green;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18.75.2px;
+    color: #828282;
+}
+
+
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #ed1e79;
+    line-height: 80px;
+}
+
+
+.navbar-right {
+    border: 2px solid orange;
+    background-color: #ffffff;
+}
+
+
+.navbar-right ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-right ul li {
+    list-style: none;
+    margin: 0 40px;
+    font-weight: 500px;
+    font-size: 24px;
+    line-height: 28.64px;
+    color: #434343;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.navbar-right ul li button{
+    display: none;
+}
+
+.navbar-right ul li:hover {
+    color: #1C51F7;
+    cursor: grab;
+}
+
+.navbar-btn {
+    border: 2px solid yellow;
+    font-family: 'SF Pro Display', sans-serif;
+    background-color: #0111AF;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.64px;
+    text-align: center;
+    width: 270px;
+    height: 69px;
+    padding: 20px;
+    gap: 8px;
+    border-radius: 100px;
+    border: 1px;
+    opacity: 0px;
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #828282 0%, #424242 100%);
+
+    box-shadow: 0px 4px 4px 0px #00000040;
+    box-shadow: 3px 2px 9px 0px #0000001A;
+    box-shadow: 14px 8px 16px 0px #00000017;
+    box-shadow: 30px 17px 21px 0px #0000000D;
+    box-shadow: 54px 31px 25px 0px #00000003;
+    box-shadow: 85px 49px 27px 0px #00000000;
+
+} */
+
+/* 
+@media screen and (max-width:805px) {
+
+    header{
+        width: 100%;
+    }
+
+    .navbar{
+        border: 2px solid red;
+        background-color: orchid;
+        width:100%;
+        display: flex;
+        margin-left:0px;
+    }
+
+
+
+    .navbar-left {
+        border: 1px solid green;
+        height: 75px;
+        width: 300px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .navbar-icon {
+        border: 1px solid red;
+        height: 83px;
+        width: 145px;
+    }
+
+    .navbar-icon-text {
+        border : 1px solid blue;
+        width: 100%;
+    }
+
+    #navbar-icon-text1 {
+        border: 2px solid green;
+        margin-top: 14px;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 31.2px;
+        color: linear-gradient(355.3deg, #000E65 -6.81%, #001CCB 69.23%);
+    }
+
+    #navbar-icon-text2 {
+        border: 2px solid green;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18.75.2px;
+        color: #828282;
+    }
+
+    
+
+    .list {
+        border: 2px solid orange;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 11.8rem;
+        left: 100%;
+        transition: all 1s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+        margin-right:50px;
+        border: 2px solid red;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
+
+    .navbar-btn {
+        display: none;
+    }
+
+    .navbar-right {
+        border: 2px solid orange;
+        background-color: #ffffff;
+    }
+    
+    
+    .navbar-right ul {
+        border: 2px solid green;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 50rem;
+    }
+    
+    .navbar-right ul li {
+        list-style: none;
+        margin-top:-100px;
+        font-weight: 500px;
+        font-size: 24px;
+        line-height: 28.64px;
+        color: #ffffff;
+        font-family: 'SF Pro Display', sans-serif;
+    }
+
+} */
+/* Navbar CSS End Here */

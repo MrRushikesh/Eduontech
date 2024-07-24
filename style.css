@@ -1,82 +1,70 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
 /* Root CSS */
-
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 /* Body CSS */
 body {
     background-color: #FFFFFF;
     color: #434343;
-    width:1905px;
+    /* width:1905px; */
 }
+
 
 /* Header Section CSS Start From Here */
 
 header {
-    /* border: 2px solid red; */
+    border: 2px solid green;
     background-color: #FFFFFF;
 }
 
-/* Navbar CSS Start From Here */
 
-nav {
+/* NavBar CSS Start From Here */
+
+.navbar {
+
+    background-color: #ffffff;
+    height: 83px;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin-top: 100px;
+}
+
+.left {
     /* border: 2px solid red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 83px;
-    margin: 100px 100px 0px 100px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    list-style: none;
-    margin: 0 40px;
-    font-weight: 500px;
-    font-size: 24px;
-    line-height: 28.64px;
-    color: #434343;
-    font-family: 'SF Pro Display', sans-serif;
-}
-
-nav ul li:hover {
-    color: #1C51F7;
-    cursor: grab;
-}
-
-.navbar-left {
-    /* border: 1px solid green; */
-    height: 83px;
     width: 465px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
-.navbar-icon {
-    /* border: 1px solid red; */
     height: 83px;
-    width: 145px;
+    display: flex;
 }
 
-.navbar-icon-text {
-    /* border : 1px solid blue; */
+.left > .navbar-icon > img {
+    /* border: 2px solid green; */
+    width: 145px;
+    height: 80px;
+}
+
+.left > .navbar-icon-text {
+    /* border: 2px solid purple; */
     width: 100%;
+    height: 83px;
+}
+
+.left > .navbar-icon-text > span {
+    display: block;
+    width: 200px;
+    height: 31px;
+    /* border: 2px solid orange; */
 }
 
 #navbar-icon-text1 {
     /* border: 2px solid green; */
-    margin-top: 14px;
+    margin-top: 15px;
     font-family: "IBM Plex Mono", monospace;
-    ;
     font-weight: 700;
     font-size: 24px;
     line-height: 31.2px;
@@ -90,14 +78,55 @@ nav ul li:hover {
     font-size: 16px;
     line-height: 18.75.2px;
     color: #828282;
+    margin-top: 2px;
 }
 
-.navbar-right {
-    /* border: 2px solid orange; */
-    background-color: #ffffff;
+.right {
+    width: 1122px;
+    height: 83px;
+    /* border: 2px solid red; */
 }
 
-.navbar-btn {
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.checkBtn {
+    cursor: pointer;
+    font-size: 30px;
+    float: right;
+    color: #ed1e79;
+    line-height: 80px;
+}
+
+.right ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 25px;
+
+}
+
+.right ul li a {
+    /* border: 2px solid green; */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.64px;
+    font-family: 'SF Pro Display', sans-serif;
+    gap: 48px;
+}
+
+.right ul li button {
     /* border: 2px solid yellow; */
     font-family: 'SF Pro Display', sans-serif;
     background-color: #0111AF;
@@ -115,19 +144,302 @@ nav ul li:hover {
     opacity: 0px;
     border: 1px solid;
     border-image-source: linear-gradient(90deg, #828282 0%, #424242 100%);
+    margin-top: -20px;
+}
 
-    box-shadow: 0px 4px 4px 0px #00000040;
-    /* box-shadow: 3px 2px 9px 0px #0000001A;
-    box-shadow: 14px 8px 16px 0px #00000017;
-    box-shadow: 30px 17px 21px 0px #0000000D;
-    box-shadow: 54px 31px 25px 0px #00000003;
-    box-shadow: 85px 49px 27px 0px #00000000; */
+
+.right ul li a:hover {
+    border-radius: 7px;
+    color: blue;
+}
+
+
+
+/* NavBar CSS End Here */
+
+/* Navbar Media Query Start From Here */
+
+@media screen and (max-width:1450px) {
+
+    .navbar {
+        background-color: #ffffff;
+        height: 83px;
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        margin-top: 100px;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        width: 465px;
+        height: 83px;
+        display: flex;
+    }
+
+    .left>.navbar-icon>img {
+        /* border: 2px solid green; */
+        width: 145px;
+        height: 80px;
+    }
+
+
+    .left>.navbar-icon-text {
+        /* border: 2px solid purple; */
+        width: 100%;
+        height: 83px;
+    }
+
+    .left>.navbar-icon-text>span {
+        /* display: none; */
+        display: block;
+        width: 200px;
+        height: 31px;
+        /* border: 2px solid orange; */
+    }
+
+
+    #navbar-icon-text1 {
+        /* border: 2px solid green; */
+        display: none;
+        margin-top: 15px;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31.2px;
+        color: linear-gradient(355.3deg, #000E65 -6.81%, #001CCB 69.23%);
+    }
+
+    #navbar-icon-text2 {
+        /* border: 2px solid green; */
+        display: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.75.2px;
+        color: #828282;
+        margin-top: 2px;
+
+    }
+
+    .right {
+        /* border: 2px solid red; */
+        width: 1122px;
+        height: 83px;
+      
+    }
+
+    .checkBtn {
+        display: none;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        cursor: pointer;
+        font-size: 30px;
+        float: right;
+        color: #ed1e79;
+        line-height: 80px;
+    }
+
+    .right ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-top: 25px;
+
+    }
+
+    .right ul li a {
+        /* border: 2px solid green; */
+        padding: 10px 20px;
+        /* font-size: 1.2rem; */
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 1s;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 28.64px;
+        font-family: 'SF Pro Display', sans-serif;
+        gap: 48px;
+    }
+
+
+    .right ul li button {
+        /* border: 2px solid yellow; */
+        font-family: 'SF Pro Display', sans-serif;
+        background-color: #0111AF;
+        color: #FFFFFF;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28.64px;
+        text-align: center;
+        width: 200px;
+        height: 59px;
+        gap: 8px;
+        padding-top: 15px;
+        border-radius: 100px;
+        border: 1px;
+        opacity: 0px;
+        border: 1px solid;
+        border-image-source: linear-gradient(90deg, #828282 0%, #424242 100%);
+        margin-top: -15px;
+    }
+
+
+    .right ul li a:hover {
+        border-radius: 7px;
+        color: blue;
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    .navbar {
+        background-color: #ffffff;
+        height: 83px;
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        margin-top: 100px;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        width: 465px;
+        height: 83px;
+        display: flex;
+    }
+
+    .left > .navbar-icon > img {
+        /* border: 2px solid green; */
+        width: 145px;
+        height: 80px;
+    }
+
+
+    .left > .navbar-icon-text {
+        /* border: 2px solid purple; */
+        width: 100%;
+        height: 83px;
+    }
+
+    .left > .navbar-icon-text > span {
+        /* display: none; */
+        display: inline-block;
+        width: 200px;
+        height: 31px;
+        /* border: 2px solid orange; */
+    }
+
+
+    #navbar-icon-text1 {
+        /* border: 2px solid green; */
+        display: inline-block;
+        margin-top: 15px;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31.2px;
+        color: linear-gradient(355.3deg, #000E65 -6.81%, #001CCB 69.23%);
+    }
+
+    #navbar-icon-text2 {
+        /* border: 2px solid green; */
+        /* display: none; */
+        display: inline-block;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18.75.2px;
+        color: #828282;
+        margin-top: 2px;
+    }
+
+
+    .right {
+        width: 100px;
+        height: 83px;
+        /* border: 2px solid red; */
+    }
+
+
+    .right ul {
+        /* border: 2px solid green; */
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(22, 7, 36);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 10rem;
+        left: 100%;
+        transition: all 1s;
+        justify-content: flex-start;
+    }
+
+    .right ul li {
+        margin-top: 60px;
+    }
+
+    .right ul li a {
+        padding: 10px 20px;
+        color: #ffffff;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 1s;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28.64px;
+        font-family: 'SF Pro Display', sans-serif;
+    }
+
+    .right > ul > li > button {
+        /* border: 2px solid yellow; */
+        font-family: 'SF Pro Display', sans-serif;
+        background-color: #0111AF;
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.64px;
+        text-align: center;
+        padding-bottom: 50px;
+        width: 200px;
+        height: 59px;
+        gap: 8px;
+        border-radius: 100px;
+        border: 1px;
+        opacity: 0px;
+        border: 1px solid;
+        border-image-source: linear-gradient(90deg, #828282 0%, #424242 100%);
+        margin-top: -15px;
+
+    }
+
+    #check {
+        display: none;
+    }
+
+    .checkBtn {
+        display: block;
+        /* border: 2px solid green; */
+        margin-right: 30px;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+    }
 
 }
 
-/* Navbar CSS End Here */
+/* Media Screen End Here */
 
-/* Header Section CSS End Here*/
+/* Header Section CSS End Here */
 
 
 
@@ -144,10 +456,11 @@ main {
 /* Section One CSS Start From Here */
 
 .section-one {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .section-one>div {
@@ -278,6 +591,157 @@ main {
     height: 100%;
 }
 
+
+@media screen and (max-width:800px){
+
+.section-one {
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: orange; */
+}
+
+.section-one>div {
+    /* border: 2px solid blue; */
+    background-color: #FFFFFF;
+}
+
+.section-one-left {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 75vh;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.section-one-left-heading {
+    /* border : 2px solid blue; */
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    color: #0D1067;
+    line-height: 84.38px;
+
+}
+
+.section-one-left-subheading {
+    /* border: 2px solid red; */
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 45.21px;
+    color: #1C51F7;
+    /* color:red; */
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.section-one-left-box {
+    /* border: 2px solid green; */
+    height: 144px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-one-left-box>div {
+    /* border: 1px solid olive; */
+    height: 144px;
+    width: 135px;
+    padding: 0px 12px 0px 12px;
+    gap: 12px;
+    border: 0px 2px 0px 0px;
+    opacity: 0px;
+    border-right: 2px solid #ECECEC;
+    
+}
+
+.section-one-left-box>div>.boxName {
+    display: block;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28.64px;
+    text-align: center;
+}
+
+.section-one-left-box>div>.boxImg {
+    /* border: 2px solid red; */
+    margin-left: 25px;
+    margin-top: 10px;
+    display: block;
+    height: 48px;
+    width: 48px;
+}
+
+.section-one-left-box>div>.boxCount {
+    margin-top: 10px;
+    display: block;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 42.96px;
+    text-align: center;
+    color: #0D1067;
+}
+
+.section-one-left-desc {
+    /* border: 2px solid orangered; */
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 42.96px;
+    font-family: 'SF Pro Display', sans-serif;
+    color: #424242;
+    text-align: center;
+}
+
+.section-one-left-details {
+    /* border: 2px solid olive; */
+    margin-top: 75px;
+}
+
+
+.section-one-left>div>p {
+    /* border: 2px solid red; */
+    display: block;
+    margin-top:25px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.64px;
+    font-family: SF Pro Display;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.64px;
+    text-align: center;
+
+}
+
+.section-one-left>div>.section-one-left-contact {
+    margin-left: 0px;
+    text-align: center;
+}
+
+.section-one-right {
+    border: 2px solid green;
+    width: 100%;
+    height: 50vh;
+}
+
+.section-one-right>img {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 50vh;
+}
+
+}
+
 /* Section One CSS End Here */
 
 
@@ -287,7 +751,7 @@ main {
 /* Section Two CSS Start From Here */
 
 .section-two {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     /* height: 210px; */
     width: 100%;
     margin-top: 30px;
@@ -314,7 +778,7 @@ main {
     width: 340px;
     height: 103px;
     margin-top: 30px;
-    margin-left: 33px;
+    /* margin-left: 33px; */
 }
 
 /* Section Two CSS End Here*/
@@ -811,7 +1275,7 @@ main {
 
 }
 
-.section-eight-card-container > div {
+.section-eight-card-container>div {
     /* border: 1px solid goldenrod; */
     width: 341px;
     height: 458px;
